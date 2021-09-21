@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	pb "server/pkg/proto"
+	pb "private-chat/pkg/proto/messagepb"
 )
 
 type MessageHandler interface {

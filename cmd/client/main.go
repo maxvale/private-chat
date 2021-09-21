@@ -3,13 +3,13 @@ package main
 import (
 	"bufio"
 	"bytes"
-	pb "client/pkg/proto"
 	"fmt"
 	"github.com/hashicorp/go-retryablehttp"
 	"google.golang.org/protobuf/proto"
 	"log"
 	"net/http"
 	"os"
+	pb "private-chat/pkg/proto/messagepb"
 	"strings"
 )
 
@@ -28,7 +28,7 @@ func main() {
 		if message == "stop" {
 			break
 		}
-		messageSend.Name = "Client"
+		messageSend.Key = "Client"
 		messageSend.Body = message
 		bodyBytes, err := proto.Marshal(messageSend)
 		if err != nil {

@@ -1,9 +1,0 @@
-syntax = "proto3";
-option go_package = "pkg/proto";
-
-package proto;
-
-message Message {
-  string name = 1;
-  string body = 2;
-}

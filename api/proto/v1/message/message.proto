@@ -1,0 +1,10 @@
+syntax = "proto3";
+option go_package = "proto/messagepb";
+
+package message;
+
+message Message {
+  string timestamp = 1;
+  string body = 2;
+  string key = 3;
+}

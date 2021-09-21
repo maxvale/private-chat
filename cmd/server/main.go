@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/go-chi/chi"
 	"net/http"
-	"server/pkg/handler"
+	"private-chat/internal/server/handler"
 )
 
 func main() {
